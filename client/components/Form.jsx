@@ -11,6 +11,7 @@ class SongForm extends React.Component {
     };
   }
 
+
   onSubmit(e) {
     e.preventDefault();
     let artistToSearch = this.refs.content.value
@@ -26,8 +27,9 @@ class SongForm extends React.Component {
   }
 
   renderForm() {
+
     return (
-      <form name="comment" id="comment" onSubmit={this.onSubmit.bind(this)}>
+      <form style={{display: 'flex', 'justify-content': 'space-evenly'}} name="comment" id="comment" onSubmit={this.onSubmit.bind(this)}>
         <textarea className="commentText" ref="content" rows="10" placeholder="Comment"></textarea>
         <button id="submit" type="submit">Add Value</button>
       </form>

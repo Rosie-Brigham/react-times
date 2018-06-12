@@ -19,7 +19,7 @@ class Results extends React.Component {
   render() {
     if (this.props.artistData !== null) {
       return (
-        <div>
+        <div style={{display: 'flex', 'flex-direction': 'column'}}>
           { this.outputResults() }
         </div>
       )
