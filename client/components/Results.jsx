@@ -10,7 +10,7 @@ class Results extends React.Component {
     let list = []
     for (var value of this.props.artistData) {
       //TODO:  <Result title={value["title"] chordsPresent={value["chordsPresent"]} />}
-      list.push(<span>Title: {value["title"]}, Chords Available: {value["chordsPresent"]}</span>)
+      list.push(<span>Title: {value["title"]}, Chords Available: {value["chordsPresent"].toString()}</span>)
     }
     return list
   }
